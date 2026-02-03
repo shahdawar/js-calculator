@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>calculator</title>
+  <style>
+    .mnclaculator {
+      border: 2px solid green;
+      width: 10vw;
+      padding: 12px;
+      padding-top: 12x;
+      margin: 120px auto;
+      height: auto;
+      background-color: rgb(215, 217, 218);
+    }
+
+    .screen {
+      border: 1px solid black;
+      height: 15vh;
+      width: 100%;
+      margin-bottom: 12px;
+      background-color: black;
+      color: white;
+      word-wrap: break-word;
+      overflow: hidden;
+    }
+
+    .buttons button {
+      padding: 12px;
+      margin-bottom: 8px;
+      width: 23%;
+      border: 1px solid rgb(197, 194, 194);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
+    }
+
+
+
+    .buttons #ac {
+      background-color: rgb(171, 15, 15);
+      color: white;
+      border-color: rgb(171, 15, 15);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
+
+    }
+
+    .buttons #be {
+      background-color: rgb(104, 129, 85);
+      color: white;
+      border-color: rgb(104, 129, 85);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
+
+    }
+
+    .buttons button:hover,
+    #be:hover,
+    #ac:hover {
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+
+    }
+
+    @media screen and (min-width:320px)and (max-width:540px) {
+      .mnclaculator {
+        width: 50vw;
+      }
+
+    }
+
+    @media screen and (min-width:541px)and (max-width:1000px) {
+
+      .mnclaculator {
+        width: 30vw;
+      }
+    }
+
+    @media screen and (min-width:1001px) {
+      .mnclaculator {
+        width: 22vw;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="mnclaculator">
+    <div class="screen"></div>
+    <div class="buttons">
+      <button class="bt" id="b1">1</button>
+      <button class="bt" id="b2">2</button>
+      <button class="bt" id="b3">3</button>
+      <button class="bt" id="b4">4</button>
+      <br>
+      <button class="bt" id="b5">5</button>
+      <button class="bt" id="b6">6</button>
+      <button class="bt" id="b7">7</button>
+      <button class="bt" id="b8">8</button>
+      <br>
+      <button class="bt" id="b9">9</button>
+      <button class="bt" id="b0">0</button>
+      <button class="bt" id="bz">*</button>
+      <button class="bt" id="bd">/</button>
+      <br>
+      <button class="bt" id="bm">-</button>
+      <button class="bt" id="bp">+</button>
+      <button class="bt" id="be">=</button>
+      <button class="bt" id="ac">AC</button>
+    </div>
+  </div>
+
+  <script src="ch1.js"></script>
+</body>
+
+</html>

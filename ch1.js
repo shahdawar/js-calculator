@@ -12,6 +12,8 @@ const bz = document.getElementById("bz");
 const bd = document.getElementById("bd");
 const bm = document.getElementById("bm");
 const bp = document.getElementById("bp");
+const bq = document.getElementById("bq");
+const bb = document.getElementById("bb");
 const be = document.getElementById("be");
 const ac = document.getElementById("ac");
 const s1 = document.getElementsByClassName("screen")[0];
@@ -59,7 +61,12 @@ bm.addEventListener("click", function () {
 bp.addEventListener("click", function () {
   s1.innerText += "+";
 });
-
+bq.addEventListener("click", function () {
+  s1.innerText += ".";
+});
+bb.addEventListener("click", function () {
+  s1.innerText = s1.innerText.slice(0, -1);
+});
 be.addEventListener("click", function () {
   try {
     s1.innerText = eval(s1.innerText);
@@ -91,6 +98,8 @@ document.addEventListener("keydown", function (event) {
     s1.innerText += "9";
   } else if (event.key === "0") {
     s1.innerText += "0";
+  } else if (event.key === ".") {
+    s1.innerText += ".";
   } else if (event.key === "+") {
     s1.innerText += "+";
   } else if (event.key === "-") {
@@ -100,7 +109,7 @@ document.addEventListener("keydown", function (event) {
   } else if (event.key === "/") {
     s1.innerText += "/";
   } else if (event.key === "Backspace") {
-    s1.innerText = "";
+    s1.innerText = s1.innerText.slice(0, -1);
   } else if (event.key === "Enter" || event.key === "=") {
     try {
       s1.innerText = eval(s1.innerText);

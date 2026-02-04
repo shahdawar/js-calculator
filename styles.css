@@ -1,5 +1,5 @@
 .mnclaculator {
-  border: 2px solid green;
+  border: 2px solid rgb(95, 107, 95);
   width: 10vw;
   padding: 12px;
   padding-top: 12x;
@@ -25,6 +25,8 @@
   width: 23%;
   border: 1px solid rgb(197, 194, 194);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .buttons #ac {
@@ -32,6 +34,7 @@
   color: white;
   border-color: rgb(171, 15, 15);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
+  width: 15vw;
 }
 
 .buttons #be {
@@ -39,15 +42,26 @@
   color: white;
   border-color: rgb(104, 129, 85);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
+  width: 33vw;
 }
-
+.buttons #bb {
+  background-color: rgb(215, 203, 71);
+  color: rgb(13, 12, 12);
+  border-color: rgb(215, 203, 71);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
+}
 .buttons button:hover,
 #be:hover,
-#ac:hover {
+#ac:hover,
+#bb:hover {
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
 }
-
-@media screen and (min-width: 320px) and (max-width: 540px) {
+@media screen and (min-width: 320px) and (max-width: 419px) {
+  .mnclaculator {
+    width: 60vw;
+  }
+}
+@media screen and (min-width: 420px) and (max-width: 540px) {
   .mnclaculator {
     width: 50vw;
   }
@@ -55,12 +69,26 @@
 
 @media screen and (min-width: 541px) and (max-width: 1000px) {
   .mnclaculator {
-    width: 30vw;
+    width: 35vw;
+  }
+  .buttons #be {
+    width: 25vw;
+  }
+
+  .buttons #ac {
+    width: 8vw;
   }
 }
 
 @media screen and (min-width: 1001px) {
   .mnclaculator {
     width: 22vw;
+  }
+  .buttons #be {
+    width: 15vw;
+  }
+
+  .buttons #ac {
+    width: 6vw;
   }
 }

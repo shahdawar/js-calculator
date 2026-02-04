@@ -6,6 +6,7 @@
   margin: 120px auto;
   height: auto;
   background-color: rgb(215, 217, 218);
+  border-radius: 6px;
 }
 
 .screen {
@@ -17,6 +18,7 @@
   color: white;
   word-wrap: break-word;
   overflow: hidden;
+  border-radius: 6px;
 }
 
 .buttons button {
@@ -50,6 +52,11 @@
   color: rgb(13, 12, 12);
   border-color: rgb(215, 203, 71);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
+}
+.buttons #be:hover {
+  background-color: black;
+  border-color: black;
+  transition: 0.2s ease;
 }
 .buttons button:hover,
 #be:hover,

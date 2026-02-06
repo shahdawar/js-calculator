@@ -53,13 +53,8 @@
   border-color: rgb(215, 203, 71);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
 }
-.buttons #be:active {
-  background-color: black;
-  border-color: black;
-  transition: 0.2s ease;
-}
+
 .buttons button:active,
-#be:active,
 #ac:active,
 #bb:active {
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
@@ -67,20 +62,27 @@
   transition: 0.2s ease;
   border-color: rgb(104, 129, 85);
 }
-.buttons #be:hover {
+.buttons #be:active {
   background-color: black;
   border-color: black;
   transition: 0.2s ease;
 }
-.buttons button:hover,
-#be:hover,
-#ac:hover,
-#bb:hover {
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
-  background-color: rgb(104, 129, 85);
-  transition: 0.2s ease;
-  border-color: rgb(104, 129, 85);
+@media (hover: hover) {
+  .buttons button:hover,
+  #ac:hover,
+  #bb:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+    background-color: rgb(104, 129, 85);
+    transition: 0.2s ease;
+    border-color: rgb(104, 129, 85);
+  }
+  .buttons #be:hover {
+    background-color: black;
+    border-color: black;
+    transition: 0.2s ease;
+  }
 }
+
 @media screen and (min-width: 320px) and (max-width: 419px) {
   .mnclaculator {
     width: 60vw;

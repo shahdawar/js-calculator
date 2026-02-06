@@ -85,6 +85,9 @@
   .mnclaculator {
     width: 60vw;
   }
+  .buttons #ac {
+    width: 24vw;
+  }
 }
 @media screen and (min-width: 420px) and (max-width: 540px) {
   .mnclaculator {

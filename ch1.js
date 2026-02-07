@@ -108,6 +108,8 @@ document.addEventListener("keydown", function (event) {
     s1.innerText += "*";
   } else if (event.key === "/") {
     s1.innerText += "/";
+  } else if (event.key === "%") {
+    s1.innerText += "%";
   } else if (event.key === "Backspace") {
     s1.innerText = s1.innerText.slice(0, -1);
   } else if (event.key === "Enter" || event.key === "=") {
